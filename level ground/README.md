@@ -2,14 +2,12 @@
 This is my recreation of the Level Ground site
 
 **Link to project:** https://fervent-hodgkin-affafd.netlify.app/
-**Original Top**
-![alt tag](https://i.imgur.com/eNnx3yZ.jpeg)
 
-**Original Bottom**
-![alt tag](https://i.imgur.com/fF0Kr36.png)
+**Original**
+![alt tag](https://i.imgur.com/eFUaBgi.png)
 
 **Recreation**
-![alt tag](https://i.imgur.com/OgZ9W21.jpg)
+![alt tag](https://i.imgur.com/BhmVgFz.png)
 
 ## How It's Made:
 
