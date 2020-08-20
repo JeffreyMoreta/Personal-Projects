@@ -1,0 +1,234 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+    -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+       -moz-box-sizing: border-box; /* Firexfox */
+            box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignRight {
+	float: right;
+}
+
+.alignLeft {
+	float: left;
+}
+
+/***********************************
+personal code
+***********************************/
+
+body{
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.button{
+    color: #66768a;
+    font-weight: bold;
+    background: white;
+    border: 1px solid white;
+    border-radius: .3rem;
+    padding: .5rem .2rem;
+    width: 5rem;
+}
+
+.boldText{
+    font-weight: bold;
+}
+
+.menuBars{
+    display: none;
+}
+
+header, .backgroundOne{
+    background-color: #66768a;
+    color: white;
+}
+
+header h1{
+    width: 1rem;
+    margin: auto 32%;
+    /*! height: auto; */
+}
+
+header img{
+    width: 2.5rem;
+}
+
+header a{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    margin: 1rem 0 2rem 2rem;
+    width: 6%;
+}
+
+button{
+    width: 10%;
+    float: right;
+}
+
+.donateButton{
+    margin: .5rem 2rem;
+}
+
+.backgroundTwo{
+    background-color: #dbdfe2;
+}
+
+footer{
+    background-color: #161f2a;
+}
+
+article{
+    width: 50%;
+    margin: 0 auto 8rem auto;
+}
+
+article img{
+    display: block;
+    margin: auto;
+    height: auto;
+    max-width: 80%;
+    margin: 8rem auto 2rem auto;
+}
+
+article h2, article h3, article p{
+    text-align: center;
+}
+
+article h3{
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.articleTwo p, .articleThree p, .articleOne p{
+    margin-bottom: 2rem;
+}
+
+.bigOne{
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 4rem 0 3rem 0;
+}
+
+.bigOneTwo{
+    color: #161f2a;
+    font-size: 2rem;
+    margin: 8rem auto 2rem auto;
+}
+
+.bigOneText{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.videoLink{
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    display: block;
+    margin: auto;
+    padding-bottom: 8rem;
+    text-align: center;
+}
+
+.articleButton{
+    display: block;
+    color: #161f2a;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    width: 12rem;
+    margin: auto;
+    border: 1px solid #979797;
+}
+
+.articleTwo, .articleThree{
+    width: 40%;
+}
+
+.articleTwo{
+    margin-left: 8%;
+    margin-right: 1rem;
+}
+
+.articleThree{
+    margin-left: 1rem;
+    margin-right: 8%;
+}
+
+footer{
+    color: white;
+    padding: 2rem;
+}
+
+footer ul{
+    margin: 1rem 0;
+}
+
+footer li{
+    display: inline;
+}
+
+footer ul p{
+    color: #66768a;
+    margin-bottom: .2rem;
+}
+
+.copyrightText{
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid white;
+}
+
+.copyrightText img{
+    width: 2rem;
+}
+
+/***********************************
+media query
+***********************************/
+
+@media screen and (max-width: 1085px) { /*big screen*/
+    header a{
+        font-size: .8rem;
+    }
+}
+
+@media only screen and (max-width: 935px) { /*tablet*/
+    header a, header h1{
+        display: none;
+    }
+    .menuBars{
+        font-size: 2rem;
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width: 800px) { /*phone*/
+    .articleTwo, .articleThree{
+        width: 100%;
+        margin: auto;
+        padding: 2rem;
+    }
+}

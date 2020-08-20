@@ -1,0 +1,127 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+    -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+       -moz-box-sizing: border-box; /* Firexfox */
+            box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignRight {
+	float: right;
+}
+
+.alignLeft {
+	float: left;
+}
+
+/***********************************
+personal code
+***********************************/
+
+body{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #fbfef9;
+    background-color: #0c6291;
+    text-align: center;
+    min-height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr .2fr 1fr .2fr 1fr 1fr 1fr;
+    grid-template-areas:
+    ". h1 ."
+    ". p ."
+    ". scoreboard ."
+    ". status ."
+    ". h2 ."
+    "rock paper scissors"
+}
+
+h1{
+    font-size: 3rem;
+    grid-area: h1;
+}
+
+p{
+    grid-area: p;
+}
+
+.scoreboard{
+    grid-area: scoreboard;
+}
+
+.scoreboard table{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+#status{
+    grid-area: status;
+}
+
+h2{
+    grid-area: h2;
+}
+
+#rock, #paper, #scissors{
+    font-size: 2rem;
+    border-radius: .3rem;
+    background-color: #a63446;
+    width: 10rem;
+    height: 6rem;
+    border: none;
+}
+
+#rock{
+    grid-area: rock;
+    justify-self: flex-end;
+}
+
+#paper{
+    grid-area: paper;
+}
+
+#scissors{
+    grid-area: scissors;
+    justify-self: flex-start;
+}
+
+/***********************************
+media query
+***********************************/
+@media screen and (max-width: 1100px) {
+    body{
+        font-size: 1.3rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #rock, #paper, #scissors{
+        font-size: 1.3rem;
+        width: 6rem;
+        height: 3rem;
+    }
+}

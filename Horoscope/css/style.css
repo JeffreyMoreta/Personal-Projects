@@ -1,0 +1,127 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+*{
+    -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+       -moz-box-sizing: border-box; /* Firexfox */
+            box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignRight {
+	float: right;
+}
+
+.alignLeft {
+	float: left;
+}
+
+/***********************************
+personal code
+***********************************/
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(110, 15, 90, 0.5)), url("../images/starsBackground.jpg");
+    background-size: cover;
+}
+
+.content{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.zodiacSigns{
+    display: grid;
+    justify-self: center;
+    align-items: center;
+    font-size: 6rem;
+    grid-template-columns: repeat(6, minmax(2rem, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+
+.result, .horoscope{
+    color: white;
+    font-size: 3rem;
+    justify-self: center;
+    align-items: center;
+}
+
+.horoscope{
+    font-size: 2.5rem;
+    width: 80%;
+}
+
+.dateForm{
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-self: baseline;
+    height: 6rem;
+    width: 22rem;
+    border: 6px solid black;
+}
+
+.dateInput{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 80%;
+    background-color: #E46CC8;
+    border: none;
+}
+
+button{
+    color: white;
+    font-size: 2rem;
+    display: inline-block;
+    width: 20%;
+    background-color: #E46CC8;
+    border: none;
+}
+
+/***********************************
+media query
+***********************************/
+
+@media screen and (max-width: 890px) {
+    .zodiacSigns{
+        grid-template-columns: repeat(4, minmax(1rem, 1fr));
+    }
+    .result, .horoscope{
+        font-size: 2.5rem;
+    }
+    .horoscope{
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .zodiacSigns{
+        grid-template-columns: repeat(3, minmax(1rem, 1fr));
+    }
+    .result, .horoscope{
+        font-size: 2rem;
+    }
+    .horoscope{
+        font-size: 1.8rem;
+    }
+}

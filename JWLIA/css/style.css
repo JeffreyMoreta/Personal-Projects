@@ -1,0 +1,408 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+    -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+       -moz-box-sizing: border-box; /* Firexfox */
+            box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignRight {
+	float: right;
+}
+
+.alignLeft {
+	float: left;
+}
+
+.boldText {
+    font-weight: bold;
+}
+
+.center {
+    text-align: center;
+}
+
+/***********************************
+personal code
+***********************************/
+
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.7em;
+}
+
+header, footer{
+    width: 100%;
+}
+
+footer{
+    background-color: #8f9ca3;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+.containerTwo{
+    width: 70%;
+    margin: auto;
+}
+
+.button{
+    background-color: #333942;
+    border: none;
+    color: white;
+    padding: 5px 40px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.coloredBackground{
+    background-color: #f1f3f5;
+}
+
+.otherColoredBackground{
+    background-color: #b8c5d0;
+}
+
+.emailForm{
+    border: 1px solid #a6b3bc;
+    padding: 5px;
+    border-radius: .3rem;
+    width: 31rem;
+    background: white;
+    display: inline-block;
+}
+
+.emailInput{
+    background: none;
+    border: none;
+}
+
+.emailSubmitOne, .emailSubmitTwo{
+    border: 1px solid #a6b3bc;
+    padding: 10px;
+    border-radius: .3rem;
+    width: 8rem;
+    background: #b8c5cf;
+    color: white;
+    display: inline-block;
+}
+
+.emailSubmitTwo{
+    color: white;
+    background-color: #8f9ca3;
+}
+
+/***********************************
+header
+***********************************/
+
+.headerContainer nav{
+    width: 80%;
+    margin: auto;
+}
+
+.headerContainer li{
+    float: left;
+    margin: 1rem 1.8rem;
+}
+
+.headerContainer a{
+    color: #534e55;
+    display: inline;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.headerContainer button{
+    margin-top: .5rem;
+}
+
+/***********************************
+hero
+***********************************/
+
+.hero{
+    background-color: #f1f3f5;
+}
+
+.heroLeft{
+    width: 60%;
+}
+
+/* fix this later*/
+.heroRight{
+    height: 35rem; /*temp visual aid*/
+    width: 40%;
+    background-image: url("../images/ghostSilo.png");
+    background-size: cover;
+}
+
+.imgContainer{
+    width: 80%;
+    margin: auto;
+}
+
+.imgContainer > img{
+    margin: 4rem auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.largeTextOne{
+    font-size: 2.5rem;
+    display: block;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.largeTextTwo{
+    font-size: 1.7rem;
+    margin-bottom: 3rem;
+}
+
+.imgContainer > section:nth-child(4) {
+    margin-bottom: 3rem;
+}
+
+.largeTextThree{
+    font-size: 1.3rem;
+    margin-bottom: .5rem;
+}
+
+/***********************************
+container two
+***********************************/
+
+.empowerText{
+    font-size: 2rem;
+    margin: 4rem 0;
+}
+
+.paraLeft, .paraRight{
+    width: 40%;
+    margin: 0 .2rem 2rem 5rem;
+}
+
+.paraLeft, .paraRight{
+    border-top: 2px solid lightpink;
+    margin-right: 1rem;
+}
+
+.strangeText{
+    color: #919ea5;
+    font-style: italic;
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+/***********************************
+container three
+***********************************/
+
+.largeTextFour{
+    font-size: 2rem;
+    margin: 2rem 0 1rem 0;
+}
+
+section.coloredBackground > section > img{
+    float: right;
+    margin: 2rem 3.5rem 2rem 3.5rem;
+}
+
+.historyText{
+    float: left;
+    width: 50%;
+    margin-bottom: 2rem;
+}
+
+.historyText p{
+    margin: 1rem 0;
+}
+
+.weAreText{
+    border: 1px solid #e8e8e8;
+}
+
+section.container:nth-child(5) > h2:nth-child(1) {
+    text-align: center;
+}
+
+section.clearfix:nth-child(2) > img:nth-child(1) {
+    float: left;
+    height: auto;
+    max-width: 20rem;
+    margin: 1rem 2rem;
+}
+
+section.clearfix:nth-child(2) > section:nth-child(2) {
+    margin: 1rem auto;
+}
+
+.organizationText{
+    width: 90%;
+    margin: auto auto 4rem auto;
+}
+
+section.container:nth-child(5) > section:nth-child(3) > section:nth-child(2) {
+  width: 48%;
+  float: left;
+  margin-left: .5rem;
+}
+
+section.container:nth-child(5) > section:nth-child(3) > section:nth-child(1) {
+  width: 48%;
+  margin-right: .5rem;
+}
+
+section.clearfix:nth-child(2) {
+    margin-bottom: 2rem;
+}
+
+.largeTextFive{
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+
+
+/***********************************
+above footer
+***********************************/
+
+.newsLetter{
+    padding: 1rem 0;
+    width: 70%;
+}
+
+.newsLetterText{
+    color: white;
+    font-size: 1.2rem;
+    width: 25%;
+    margin-top: .4rem;
+}
+
+/***********************************
+footer
+***********************************/
+
+footer, footer a{
+    color: white;
+    text-decoration: none;
+}
+
+.copyright{
+    font-weight: bold;
+    border-bottom: 1px solid white;
+    padding: 1rem 0;
+}
+
+.copyright p, .copyright ul{
+    width: 50%;
+}
+
+.copyright ul{
+    text-align: right;
+}
+
+.copyright li{
+    padding-left: 1rem;
+    display: inline;
+}
+
+.listList{
+    padding-top: 1rem;
+}
+
+.listOne, .listTwo, .listThree{
+    width: 20%;
+    float: left;
+}
+
+.listFour li{
+    font-weight: bold;
+    padding-left: 2rem;
+    display: inline;
+}
+
+.listOne li:first-child, .listTwo li:first-child, .listThree li:first-child{
+    font-weight: bold;
+}
+
+/***********************************
+media query
+***********************************/
+
+@media screen and (max-width: 1465px) {
+    .emailForm{
+        max-width: 70%;
+    }
+}
+
+@media only screen and (max-width: 1375px) {
+    .emailForm{
+        max-width: 50%;
+    }
+    .newsLetterText{
+        font-size: 1rem;
+    }
+    .paraLeft, .paraRight, .strangeText{
+        width: 100%;
+        margin: auto;
+        padding: 1rem;
+        float: left;
+    }
+}
+
+@media only screen and (max-width: 1205px) {
+    .newsLetter{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .photoOne, .photoTwo, .headerContainer{
+        display: none;
+    }
+    .historyText{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1075px) {
+    .emailForm, .emailSubmitOne, .heroRight{
+        display: none;
+    }
+    .heroLeft{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .footer, .organizationText{
+        display: none;
+    }
+}

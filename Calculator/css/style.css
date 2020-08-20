@@ -1,0 +1,177 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+    -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+       -moz-box-sizing: border-box; /* Firexfox */
+            box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignRight {
+	float: right;
+}
+
+.alignLeft {
+	float: left;
+}
+
+/***********************************
+personal code
+***********************************/
+
+body, .displayInner, button{
+    font-family: 'Spartan', sans-serif;
+    font-size: 2rem;
+    color: #fb9334;
+    background-color: #003d59;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    /* min-width: 21rem; */
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    display: grid;
+    min-height: 40rem;
+    max-width: 25rem;
+    padding: 1rem;
+    border: 4px solid #167070;
+    border-radius: .3rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: minmax(1fr,1.5fr) 1fr 1fr 1fr 1fr;
+    grid-gap: .5rem;
+    grid-template-areas:
+    "display display display display"
+    "numberSeven numberEight numberNine division"
+    "numberFour numberFive numberSix multiply"
+    "numberOne numberTwo numberThree minus"
+    "numberZero decimal equals plus"
+}
+
+.calculator button, .display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #414a4f;
+    border: 2px solid #167070;
+    border-radius: .3rem;
+}
+
+.calculator button:hover{
+    background-color: #003d59;
+}
+
+.display{
+    grid-area: display;
+}
+
+.displayOuter, .displayInner{
+    height: 100%;
+    width: 100%;
+}
+
+.displayInner{
+    font-size: 2rem;
+    background-color: grey;
+    border: none;
+}
+
+.numberOne{
+    grid-area: numberOne;
+}
+
+.numberTwo{
+    grid-area: numberTwo;
+}
+
+.numberThree{
+    grid-area: numberThree;
+}
+
+.numberFour{
+    grid-area: numberFour;
+}
+
+.numberFive{
+    grid-area: numberFive;
+}
+
+.numberSix{
+    grid-area: numberSix;
+}
+
+.numberSeven{
+    grid-area: numberSeven;
+}
+
+.numberEight{
+    grid-area: numberEight;
+}
+
+.numberNine{
+    grid-area: numberNine;
+}
+
+.numberZero{
+    grid-area: numberZero;
+}
+
+.plus{
+    grid-area: plus;
+}
+
+.minus{
+    grid-area: minus;
+}
+
+.multiply{
+    grid-area: multiply;
+}
+
+.decimal{
+    grid-area: decimal;
+}
+
+.division{
+    grid-area: division;
+}
+
+.equals{
+    grid-area: equals;
+}
+
+/***********************************
+media query
+***********************************/
+
+@media screen and (min-width: 1441px) { /*big screen*/
+
+}
+
+@media only screen and (max-width: 768px) { /*tablet*/
+
+}
+
+@media only screen and (max-width: 425px) { /*phone*/
+
+}

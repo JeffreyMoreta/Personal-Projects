@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>To Do List</title>
+		<!-- external CSS link -->
+		<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header></header>
+		<section class="container">
+			<form class="inputForm" onsubmit="event.preventDefault();">
+				<input class="inputBar" type="text" placeholder="Tasks..." value="">
+				<button class="submit btn" type="button" name="button">Add To List</button>
+			</form>
+			<ul class="todoList"></ul>
+			<p class="itemsLeft"></p>
+			<button class="clearList btn" type="button" name="button">Clear List</button>
+			<button class="clearComplete btn" type="button" name="button">Clear Completed</button>
+		</section>
+		<footer></footer>
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>

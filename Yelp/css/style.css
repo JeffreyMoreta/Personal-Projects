@@ -1,0 +1,327 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+    -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+       -moz-box-sizing: border-box; /* Firexfox */
+            box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignRight {
+	float: right;
+}
+
+.alignLeft {
+	float: left;
+}
+
+.textBold{
+    font-weight: bold;
+}
+
+/***********************************
+personal code
+***********************************/
+
+body{
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.btn{
+    border: 2px solid white;
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+}
+
+.largeBackground{
+    background-image: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(200,130,50,0.25) 0%), url("../images/yelpHero.jpg");
+    background-size: cover;
+}
+
+.mainFocus{
+    font-weight: bold;
+    padding-top: 1rem;
+    height: 35rem;
+}
+
+.mainFocus a{
+    color: white;
+}
+
+.mainFocus img{
+    width: 10rem;
+    padding-bottom: 1rem;
+}
+
+.communication{
+    margin-left: 2rem;
+}
+.communication, .account{
+    display: inline-block;
+    float: left;
+}
+
+.communication li, .account li{
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.account{
+    float: right;
+}
+
+.mainFocusSub{
+    padding-top: 10rem;
+}
+
+.centerPiece{
+    width: 100%;
+    text-align: center;
+}
+
+.search{
+    text-align: center;
+}
+
+.searchTitle{
+    color: #666666;
+}
+
+.searchLeft, .searchRight{
+    background-color: white;
+    border-radius: .3rem;
+    padding: 1rem;
+    width: 49%;
+    text-align: left;
+    float: left;
+}
+
+.searchLeft{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.searchRight{
+    width: 45.7%;
+    border-radius: 0;
+}
+
+.textInput{
+    width: 85%;
+    height: 1.4rem;
+    border: none;
+}
+
+.navServices{
+    padding-top: 1rem;
+}
+
+.submit{
+    float:left;
+    width: 2%;
+    color: white;
+    background-color: #d32323;
+    height: 3.3rem;
+    width: 3.8rem;
+    border: none;
+    font-size: 1.3rem;
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+}
+
+.headlineText{
+    font-weight: bold;
+    color: #d32323;
+    padding-top: 2rem;
+}
+
+.navServices, .listCities{
+    width: 100%;
+}
+
+.navServices li, .listCities li{
+    display: inline;
+    margin-left: 1rem;
+}
+
+.backgroundInfo{
+    color: white;
+    padding-top: 8rem;
+    width: 100%;
+    text-align: center;
+}
+
+.headlineText, .businessPreviewIntro, .businessPreviewSummary{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.businessPreviewIntro{
+    font-weight: bold;
+    color: #d32323;
+}
+
+.businessPreview img{
+    width: 100%;
+}
+
+ul.listCities{
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+
+.listCities a{
+    color: #686f77;
+}
+
+.businessPreview, .categories{
+    width: 50%;
+    margin: auto;
+    padding-top: 2rem;
+}
+
+.businessPreviewOne, .businessPreviewTwo, .businessPreviewThree, .categoryBrowse{
+    float: left;
+    border: 1px solid #f0f0f0;
+    width: 27%;
+    margin-right: 3.1rem;
+}
+
+.businessPreviewOne{
+    margin-left: 2rem;
+}
+
+.businessPreviewSummary{
+    margin-top: 16rem;
+}
+
+.businessPreviewOneInformation, .businessPreviewTwoInformation, .businessPreviewThreeInformation{
+    padding: 1rem;
+}
+
+.orange{
+    color: #f15c02;
+}
+
+.businessName{
+    font-weight: bold;
+    color: #0072bb;
+}
+
+.categoryBrowse{
+    width: 20%;
+    margin-right: 1rem;
+}
+
+.categoryBrowse img{
+    width: 100%;
+}
+
+.categoryBrowse:first-child{
+    margin-left: 5rem;
+}
+
+/***********************************
+media query
+***********************************/
+
+@media screen and (max-width: 1910px) {
+    .businessPreviewOne, .businessPreviewTwo, .businessPreviewThree{
+        width: 33%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 1900px) {
+    .listCities{
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 1560px) {
+    .businessPreviewSummary{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .categoryBrowse{
+        width: 17%;
+    }
+    .searchLeft, .searchRight{
+        width: 47%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+        .searchLeft, .searchRight{
+        width: 46%;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .businessPreview{
+        width: 50%;
+    }
+    .businessPreviewOne, .businessPreviewTwo, .businessPreviewThree{
+        width: 60%;
+        margin: auto;
+        margin-left: 5rem;
+    }
+    .businessPreviewOne img, .businessPreviewTwo img, .businessPreviewThree img{
+        width: 100%;
+    }
+    .searchLeft, .searchRight{
+    width: 45%;
+    }
+    .headlineText, .categoryBrowse, .secondaryFocus{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .searchLeft, .searchRight, .submit{
+        width: 100%;
+        border-radius: .3rem;
+    }
+    .businessPreviewOne, .businessPreviewTwo, .businessPreviewThree{
+        margin-left: 4rem;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .communication{
+        display: none;
+    }
+    .businessPreviewOne, .businessPreviewTwo, .businessPreviewThree{
+        margin-left: 3rem;
+    }
+}

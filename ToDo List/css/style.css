@@ -1,0 +1,93 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+* {
+    letter-spacing: .02rem;
+    -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+       -moz-box-sizing: border-box; /* Firexfox */
+            box-sizing: border-box; /* IE */
+}
+
+/***********************************
+personal code
+***********************************/
+body{
+    display: flex;
+    flex-flow: wrap;
+    min-height: 100vh;
+    background-color: #588b8b;
+}
+
+ul{
+    list-style: circle;
+    list-style-position: inside;
+}
+
+li{
+    word-wrap: break-word;
+    padding: .2rem;
+}
+
+p{
+    text-align: center;
+}
+
+.container, .inputForm{
+    display: grid;
+    grid-gap: .2rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: .5fr 2fr .2fr .2fr
+}
+
+.container, .inputBar, .btn{
+    font-family: 'Alata', sans-serif;
+    border-radius: .3rem;
+}
+
+.container{
+    min-height: 500px;
+    max-width: 500px;
+    margin: auto;
+    padding: .3rem;
+    border: 2px solid black;
+}
+
+.btn, .inputBar{
+    font-size: 1.1rem;
+    height: 2rem;
+    background: #ffffff;
+    border: none;
+    transition: background-color .2s ease;
+}
+
+.btn:hover{
+    background: #76a7a7;
+}
+
+.inputBar{
+    padding-left: .2rem;
+}
+
+.strike{
+    text-decoration: line-through;
+    text-decoration-color: #f28f3b;
+    color: grey;
+    background-color: #ffd5c2;
+}
+
+/***********************************
+media query
+***********************************/
+
+@media only screen and (max-width: 1441px) { /*big screen*/
+
+}
+
+@media only screen and (max-width: 768px) { /*tablet*/
+
+}
+
+@media only screen and (max-width: 425px) { /*phone*/
+
+}
