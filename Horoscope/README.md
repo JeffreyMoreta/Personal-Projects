@@ -3,7 +3,7 @@ This is my attempt at creating a website that reads your Horoscope
 
 **Link to project:** https://compassionate-gates-838486.netlify.app/
 
-![alt tag](https://i.imgur.com/oDfY68s.png)
+![alt tag](https://i.imgur.com/wrx9QfF.jpeg)
 
 ## How It's Made:
 
