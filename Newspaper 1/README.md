@@ -3,7 +3,11 @@ This is my recreation of the Slate News site
 
 **Link to project:** https://objective-austin-e055c3.netlify.app/
 
-![alt tag](http://placecorgi.com/1200/650)
+**Original**
+![alt tag](https://i.imgur.com/Pj659HQ.png)
+
+**Recreation**
+![alt tag](https://i.imgur.com/YyJcZwd.png)
 
 ## How It's Made:
 
