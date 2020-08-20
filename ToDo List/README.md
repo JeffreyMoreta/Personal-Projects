@@ -1,4 +1,4 @@
-# Calculator
+# To Do List
 This is my attempt at a To Do List
 
 **Link to project:** https://fervent-heisenberg-612bab.netlify.app/
