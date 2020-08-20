@@ -3,7 +3,7 @@ This is my attempt at creating a website that plays Rock, Paper, Scissors with y
 
 **Link to project:** https://gallant-sinoussi-6406ec.netlify.app/
 
-![alt tag](http://placecorgi.com/1200/650)
+![alt tag](https://i.imgur.com/epPCq6A.png)
 
 ## How It's Made:
 
