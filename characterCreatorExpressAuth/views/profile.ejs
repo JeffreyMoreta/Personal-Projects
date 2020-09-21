@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+    <title>Characters</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+    <div class="page-header text-center">
+        <h1></span> Characters</h1>
+        <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+    </div>
+
+    <div class="row">
+        <div>
+          <h3>Characters</h3>
+          <ul class="characters">
+          <% for(var i=0; i<characters.length; i++) {%>
+            <li class="charCard">
+              <span class="charName">Name: <%= characters[i].name %></span>
+              <span class="charStr">STR: <%= characters[i].str %></span>
+              <span class="charDex">DEX: <%= characters[i].dex %></span>
+              <span class="charInt">INT: <%= characters[i].int %></span>
+              <span class="trashCan"><i class="fa fa-trash" aria-hidden="true"></i></span>
+            </li>
+          <% } %>
+          </ul>
+
+        <h2>Press for a character</h2>
+        <button type="submit" class="subBtn">Submit</button>
+        </div>
+
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>

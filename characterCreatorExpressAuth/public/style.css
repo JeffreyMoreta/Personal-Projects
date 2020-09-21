@@ -1,0 +1,30 @@
+body{
+  padding-top:80px;
+  word-wrap:break-word;
+}
+.characters{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+.charCard{
+    display: grid;
+    list-style: none;
+    height: 20rem;
+    width: 15rem;
+    padding: .3rem;
+    margin: .5rem;
+    border: 2px solid black;
+    border-radius: 1.3rem;
+}
+.charStr, .charDex, .charInt{
+    font-style: italic;
+    align-self: end;
+}
+.cardMain{
+    font-size: 2rem;
+}
+.trashCan{
+    justify-self: end;
+    align-self: end;
+}
