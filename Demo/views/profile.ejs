@@ -1,37 +1,48 @@
 <!doctype html>
 <html>
 <head>
-    <title>FlashCards</title>
+    <title>Chatroom</title>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
+<div class="container trueContainer">
 
     <div class="page-header text-center">
-        <h1></span> FlashCards</h1>
+        <h1></span> Chatroom # 1</h1>
         <a href="/logout" class="btn btn-default btn-sm">Logout</a>
     </div>
 
+    <!--
+        Currently allows for the seperation of different user texts
+        Removed trashcan from other person's messages
+        Try and get more familiar with Bootstrap
+        Future Idea - allow for the user to modify their texts after it's been submitted
+    -->
     <div class="row">
         <div>
-          <h3>Cards</h3>
-          <ul class="cards">
-          <% for(var i=0; i<cards.length; i++) {%>
-            <% if (user.local.email == cards[i].name) {%>
-                <li class="flashCard">
-                  <span class="cardAuthor"><%= cards[i].name %></span>
-                  <span class="cardMain"><%= cards[i].msg %></span>
-                  <span class="trashCan"><i class="fa fa-trash" aria-hidden="true"></i></span>
+          <h3><%= user.local.email %>'s Chatroom</h3>
+          <ul class="chat">
+          <% for(var i=0; i<chat.length; i++) {%>
+            <% if (user.local.email == chat[i].name) {%>
+                <li class="chatBubble myMessage">
+                  <span class="chatAuthor"><%= chat[i].name %></span>
+                  <span class="chatMessage"><%= chat[i].msg %></span>
+                  <span class="chatTrash"><i class="fa fa-trash" aria-hidden="true"></i></span>
+                </li>
+            <% } else { %>
+                <li class="chatBubble otherMessage">
+                  <span class="chatAuthor"><%= chat[i].name %></span>
+                  <span class="chatMessage"><%= chat[i].msg %></span>
                 </li>
             <% } %>
           <% } %>
           </ul>
 
-          <h2>Submit a Card</h2>
+          <h2>Send a message</h2>
         <% if (user.local.email) { %>
-          <form action="/cards" method="POST">
+          <form action="/chat" method="POST">
             <input type="text" value="<%= user.local.email %>" name="name">
             <input type="text" placeholder="message" name="msg">
             <button type="submit">Submit</button>

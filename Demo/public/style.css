@@ -2,32 +2,57 @@ body{
   padding-top:80px;
   word-wrap:break-word;
 }
-.cards{
-    display: grid;
-}
-.flashCard{
-    display: grid;
-    grid-template-rows: 1.8fr .2fr;
-    grid-template-columns: 1fr 1fr;
-    min-height: 20rem;
-    min-width: 15rem;
+li{
     list-style: none;
-    padding: .3rem;
-    margin: .5rem;
+}
+.chat{
+    display: grid;
+    grid-template-columns: 1fr .2fr 1fr;
+}
+.chatBubble{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .2fr 1fr .2fr;
+    min-height: 8rem;
+    min-width: 25rem;
+    margin: .2rem;
+    padding: .2rem;
     border: 2px solid black;
-    border-radius: 1.3rem;
+    border-radius: .3rem;
 }
-.cardAuthor{
-    font-style: italic;
-    align-self: end;
-    grid-row: 2;
+.chatAuthor{
+    font-size: .9rem;
+    color: gray;
+    grid-column: 2;
+    text-align: right;
 }
-.cardMain{
-    font-size: 2rem;
+.chatMessage{
+    font-size: 2.1rem;
     grid-column: 1 / span 2;
 }
-.trashCan{
-    justify-self: end;
+.chatTrash{
+    font-size: .95rem;
     align-self: end;
-    grid-row: 2;
+    justify-self: end;
+    grid-column: 2;
+    grid-row: 3;
+}
+.otherMessage{
+    justify-self: start;
+    grid-column: 1;
+    text-align: left;
+    background-color: beige;
+    transistion: all .2s;
+}
+.myMessage{
+    justify-self: end;
+    grid-column: 3;
+    text-align: right;
+    background-color: lightblue;
+    transistion: all .2s;
+}
+
+.otherMessage:hover,
+.myMessage:hover{
+    transform: scale(1.05);
 }

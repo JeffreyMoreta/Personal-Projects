@@ -1,3 +1,7 @@
+// Figure out how to do websockets, this will allow you to have a realtime chatrooms
+// Figure out how to create unique urls, this will allow your chatrooms to pull up their own sessions
+// After that is created and sorted, start working on sync media, and then streaming
+
 module.exports = function(app, passport, db) {
 
     app.get('/', function(req, res) {
@@ -5,11 +9,11 @@ module.exports = function(app, passport, db) {
     });
 
     app.get('/profile', isLoggedIn, function(req, res) {
-        db.collection('cards').find().toArray((err, result) => {
+        db.collection('chat').find().toArray((err, result) => {
           if (err) return console.log(err)
           res.render('profile.ejs', {
             user : req.user,
-            cards: result
+            chat: result
           })
         })
     });
@@ -19,16 +23,16 @@ module.exports = function(app, passport, db) {
         res.redirect('/');
     });
 
-    app.post('/cards', (req, res) => {
-      db.collection('cards').save({name: req.body.name, msg: req.body.msg.trim()}, (err, result) => {
+    app.post('/chat', (req, res) => {
+      db.collection('chat').save({name: req.body.name, msg: req.body.msg.trim()}, (err, result) => {
         if (err) return console.log(err)
         console.log('saved to database')
         res.redirect('/profile')
       })
     })
 
-    app.delete('/cards', (req, res) => {
-      db.collection('cards').findOneAndDelete({name: req.body.name, msg: req.body.msg}, (err, result) => {
+    app.delete('/chat', (req, res) => {
+      db.collection('chat').findOneAndDelete({name: req.body.name, msg: req.body.msg}, (err, result) => {
         if (err) return res.send(500, err)
         res.send('Message deleted!')
       })
