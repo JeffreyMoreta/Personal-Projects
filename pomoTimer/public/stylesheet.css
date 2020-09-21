@@ -1,0 +1,55 @@
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    font-size: 2rem;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    font-size: 1.5rem;
+    border-radius: .3rem;
+}
+.container{
+    display: grid;
+    grid-gap: .5rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    border: 1px solid black;
+    border-radius: .3rem;
+    padding: 1rem;
+}
+.currentTime{
+    justify-self: center;
+    grid-column: 1 / span 4;
+    padding: 1rem;
+}
+.startTimer{
+    grid-column: 1 / span 4;
+    grid-row: 2;
+}
+.resetTimer{
+    grid-column: 1 / span 4;
+    grid-row: 3;
+}
+.breakTime{
+    justify-self: center;
+    grid-column: 1 / span 2;
+    grid-row: 4;
+    padding: 1rem;
+}
+.increaseBreak{
+    grid-column: 1;
+    grid-row: 5;
+}
+.sessionTime{
+    justify-self: center;
+    grid-column: 3 / span 2;
+    grid-row: 4;
+    padding: 1rem;
+}
