@@ -11,6 +11,3 @@
 
 ## WIP Photo
 ![Image of Demo site](demoWIP.png)
-
-
-## Credit
