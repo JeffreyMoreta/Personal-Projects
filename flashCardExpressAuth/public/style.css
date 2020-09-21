@@ -1,0 +1,33 @@
+body{
+  padding-top:80px;
+  word-wrap:break-word;
+}
+.cards{
+    display: grid;
+}
+.flashCard{
+    display: grid;
+    grid-template-rows: 1.8fr .2fr;
+    grid-template-columns: 1fr 1fr;
+    min-height: 20rem;
+    min-width: 15rem;
+    list-style: none;
+    padding: .3rem;
+    margin: .5rem;
+    border: 2px solid black;
+    border-radius: 1.3rem;
+}
+.cardAuthor{
+    font-style: italic;
+    align-self: end;
+    grid-row: 2;
+}
+.cardMain{
+    font-size: 2rem;
+    grid-column: 1 / span 2;
+}
+.trashCan{
+    justify-self: end;
+    align-self: end;
+    grid-row: 2;
+}
